@@ -1,0 +1,35 @@
+Create, read, update and delete (CRUD)
+
+In computer programming, create, read, update and delete[1]
+as an acronym CRUD or possibly a backronym)
+(Sometimes called SCRUD with an "S" for Search) are the four basic functions of
+persistent storage.[2] Sometimes CRUD is expanded with the words retrieve instead
+of read, modify instead of update, or destroy instead of delete.
+It is also sometimes used to describe user interface conventions that
+facilitate viewing, searching, and changing information; often using
+computer-based forms and reports. The term was likely first popularized
+by James Martin in his 1983 book Managing the Data-base Environment.[1][3]
+The acronym may be extended to CRUDL to cover listing of large data sets
+which bring additional complexity such as pagination when the data sets are
+too large to hold easily in memory.
+
+Another variation of CRUD is BREAD, an acronym for "Browse, Read, Edit, Add,
+Delete".[citation needed] This extension is mostly used in context with data
+protection concepts, when it is legally not allowed to delete data directly.
+Locking the data prevents the access for users without destroying still needed
+data. Yet another variation, used before CRUD became more common, is MADS,
+an acronym for "Modify, All, Delete, Show."[citation needed]
+
+
+Operation	SQL	                HTTP                             DDS
+Create	  INSERT	    PUT /   POST	                          write
+Read      (Retrieve)	SELECT	GET	    read / take
+Update    (Modify)	  UPDATE	POST /  PUT / PATCH	            write
+Delete    (Destroy)	  DELETE	DELETE	                        dispose
+
+
+SQL
+
+Structured Query Language) is a special-purpose programming language designed
+for managing data held in a relational database management system (RDBMS),
+or for stream processing in a relational data stream management system (RDSMS).

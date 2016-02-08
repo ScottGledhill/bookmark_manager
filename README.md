@@ -1,9 +1,9 @@
-USER STORIES
---------------
+  USER STORIES
+  --------------
 
 It shows a list of links from the database
 
-  As a user 
+  As a user
   So I organise my study list
   I would like to see a list of relevant links
 
