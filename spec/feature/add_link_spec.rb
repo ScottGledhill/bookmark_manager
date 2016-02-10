@@ -11,9 +11,9 @@ feature 'Adding a link' do
 
   scenario 'a user can use the form to submit a link' do
     visit '/links/new'
-    fill_in('Name', with: 'Github')
-    fill_in('URL', with: 'http://github.com')
-    click_button('Submit')
+    fill_in('name', with: 'Github')
+    fill_in('url', with: 'http://github.com')
+    click_button('Create link')
     within 'ul#links' do
       expect(page).to have_content('Github')
     end
