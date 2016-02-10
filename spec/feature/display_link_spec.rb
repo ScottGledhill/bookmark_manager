@@ -1,4 +1,4 @@
-require './lib/link'
+require './app/models/link'
 
 feature 'display_link' do
 
