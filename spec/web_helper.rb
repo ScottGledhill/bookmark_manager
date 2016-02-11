@@ -1,6 +1,10 @@
-def sign_up
+
+def sign_up(email: '1@2.3.com',
+            password: '12345678',
+            password_confirmation: '12345678')
   visit '/users/new'
-  fill_in :email,    with: '1@2.3.com'
-  fill_in :password, with: 'IHATEYOU'
+  fill_in :email, with: email
+  fill_in :password, with: password
+  fill_in :password_confirmation, with: password_confirmation
   click_button 'Sign up'
 end
