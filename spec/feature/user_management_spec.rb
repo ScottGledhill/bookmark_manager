@@ -11,7 +11,7 @@ feature 'User sign up' do
   scenario 'requires a matching confirmation password' do
     expect { sign_up(password_confirmation: 'dadadsd') }.not_to change(User, :count)
     expect(current_path).to eq('/users')
-    expect(page).to have_content 'Password and confirmation password do not match'
+    expect(page).to have_content 'Password does not match the confirmation Email'
   end
 
   scenario 'requires an email to be entered' do
@@ -29,6 +29,6 @@ feature 'User sign up' do
   scenario 'can\'t sign up with already registered email' do
     sign_up
     expect { sign_up(email: "1@2.3.com") }.not_to change(User, :count)
-    expect(page).to have_content 'Email already in use'
+    expect(page).to have_content 'Email is already taken Email'
   end
 end
